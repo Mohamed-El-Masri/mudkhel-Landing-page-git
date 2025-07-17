@@ -6,74 +6,75 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/sections/FeaturesSection.css';
 
 import { 
-  faUsers,
-  faClock,
+  faFileInvoice,
+  faZap,
   faLanguage,
   faFileExcel,
   faShieldAlt,
-  faHeadset
+  faCloud,
+  faCogs
 } from '@fortawesome/free-solid-svg-icons';
 
 const FeaturesSection = () => {
   const features = [
     {
-      icon: faUsers,
-      title: "فريق متخصص",
-      description: "محاسبون ومختصون في إدخال البيانات بخبرة تزيد عن 5 سنوات",
+      icon: faFileInvoice,
+      title: "مسح OCR متطور",
+      description: "تقنية التعرف البصري على النصوص بالذكاء الاصطناعي لقراءة الفواتير بدقة فائقة",
       details: [
-        "دقة 99.9% في الإدخال",
-        "مراجعة مزدوجة للبيانات",
-        "خبرة في جميع أنواع الفواتير"
+        "دقة مسح تفوق 99.5%",
+        "قراءة الفواتير التالفة أو غير الواضحة",
+        "معالجة جميع تنسيقات الفواتير"
       ]
     },
     {
-      icon: faClock,
-      title: "سرعة في التسليم",
-      description: "نسلم لك ملف Excel الجاهز خلال 24 ساعة من استلام الفواتير",
+      icon: faZap,
+      title: "معالجة فورية",
+      description: "خوارزميات سريعة تحول فواتيرك إلى بيانات منظمة في ثوانٍ معدودة",
       details: [
-        "تسليم سريع مضمون",
-        "خدمة طوارئ متاحة",
-        "إشعارات فورية بالتقدم"
+        "معالجة في أقل من 3 ثوانٍ",
+        "تشغيل على مدار 24/7",
+        "إنتاجية عالية للطلبات الكبيرة"
       ]
     },
     {
       icon: faLanguage,
-      title: "دعم متعدد اللغات",
-      description: "نتعامل مع الفواتير العربية والإنجليزية بنفس الدقة والاحترافية",
+      title: "دعم ثنائي اللغة",
+      description: "قراءة وفهم الفواتير باللغتين العربية والإنجليزية بدقة متقدمة",
       details: [
-        "قراءة النصوص العربية والإنجليزية",
-        "تعامل مع الخطوط المختلفة",
-        "فهم المصطلحات المحاسبية"
+        "خوارزميات مخصصة للغة العربية",
+        "تعرف على الخطوط المختلفة",
+        "استخراج البيانات المالية بدقة"
       ]
     },
     {
       icon: faFileExcel,
-      title: "ملفات Excel منظمة",
-      description: "نسلم لك ملفات Excel مرتبة ومصنفة حسب احتياجاتك",
+      title: "تصدير Excel احترافي",
+      description: "بيانات منظمة في ملفات Excel جاهزة للاستخدام المباشر في أنظمتك المحاسبية",
       details: [
-        "تنسيق احترافي",
-        "تصنيف تلقائي",
-        "صيغ محاسبية جاهزة"
+        "تنسيق محاسبي موحد",
+        "جداول ديناميكية جاهزة",
+        "صيغ محاسبية متقدمة"
       ]
     },
     {
       icon: faShieldAlt,
-      title: "امتثال للمعايير",
-      description: "نضمن توافق البيانات مع متطلبات ZATCA والمعايير المحاسبية",
+      title: "امتثال ZATCA كامل",
+      description: "ضمان توافق كامل مع متطلبات هيئة الزكاة والضريبة والجمارك السعودية",
       details: [
-        "متوافق مع ZATCA",
-        "معايير محاسبية دولية",
+        "معايير ZATCA الجديدة",
+        "فاتورة إلكترونية معتمدة",
         "ضمان الامتثال القانوني"
       ]
     },
     {
-      icon: faHeadset,
-      title: "دعم فني مميز",
-      description: "فريق دعم متخصص للإجابة على استفساراتك وحل أي مشكلة",
+      icon: faCloud,
+      title: "منصة سحابية آمنة",
+      description: "معالجة سحابية متقدمة مع أعلى معايير الأمان وحماية البيانات",
       details: [
-        "دعم 24/7",
-        "استجابة سريعة",
-        "خبراء متخصصون"
+        "تشفير من الدرجة المصرفية",
+        "نسخ احتياطية تلقائية",
+        "وصول آمن من أي مكان"
       ]
     }
   ];
@@ -83,11 +84,11 @@ const FeaturesSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
-            <span className="title-icon">⚡</span>
-            لماذا تختار مُدخِل؟
+            <FontAwesomeIcon icon={faCogs} className="title-icon" />
+            تقنيات OCR المتطورة
           </h2>
           <p className="section-subtitle">
-            مميزات خدمتنا التي تجعل إدارة الفواتير أسهل وأذكى
+            مميزات تقنية الذكاء الاصطناعي لمسح الفواتير وتحويلها الفوري
           </p>
         </div>
 

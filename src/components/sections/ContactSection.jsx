@@ -9,7 +9,8 @@ import {
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
-  faCalculator
+  faFileInvoice,
+  faCloud
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
@@ -47,21 +48,23 @@ const ContactSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
-            <span className="title-icon">📞</span>
-            اطلب الخدمة الآن
+            <FontAwesomeIcon icon={faFileInvoice} className="title-icon" />
+            ابدأ تجربة OCR المتطورة
           </h2>
           <p className="section-subtitle">
-            جاهز لتحويل فواتيرك إلى ملفات Excel منظمة؟ تواصل معنا للحصول على عرض سعر مجاني!
+            تجربة تقنية مسح الفواتير بالذكاء الاصطناعي - استشارة فنية مجانية ومعاينة فورية!
           </p>
         </div>
 
         <Row>
           <Col lg={6} data-aos="fade-right">
             <div className="contact-info">
-              <h3>🚀 ابدأ خدمة مُدخِل اليوم!</h3>
+              <h3>
+                <FontAwesomeIcon icon={faCloud} /> جرب منصة OCR الآن مجاناً!
+              </h3>
               <p className="contact-intro">
-                أرسل لنا فواتيرك واحصل على ملف Excel منظم خلال 24 ساعة. 
-                فريقنا جاهز لخدمتك بأعلى معايير الجودة والدقة.
+                احصل على معاينة مجانية لتقنية OCR المتطورة. أرسل عينة من فواتيرك 
+                واستلم النتائج المعالجة بالذكاء الاصطناعي خلال دقائق.
               </p>
               
               <div className="contact-items">
@@ -70,9 +73,9 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </div>
                   <div className="contact-details">
-                    <h5>واتساب (الأسرع)</h5>
+                    <h5>واتساب (تجربة فورية)</h5>
                     <a href="https://wa.me/+966500000000">+966 50 000 0000</a>
-                    <span className="contact-note">أرسل صور الفواتير مباشرة</span>
+                    <span className="contact-note">أرسل فاتورة واحصل على النتيجة خلال دقائق</span>
                   </div>
                 </div>
                 
@@ -81,9 +84,9 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
                   <div className="contact-details">
-                    <h5>البريد الإلكتروني</h5>
-                    <a href="mailto:service@mudakhil.com">service@mudakhil.com</a>
-                    <span className="contact-note">لإرسال الفواتير والمرفقات</span>
+                    <h5>استشارة تقنية مجانية</h5>
+                    <a href="mailto:ocr@mudakhil.com">ocr@mudakhil.com</a>
+                    <span className="contact-note">مناقشة المتطلبات التقنية والتكامل</span>
                   </div>
                 </div>
                 
@@ -92,9 +95,9 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faPhone} />
                   </div>
                   <div className="contact-details">
-                    <h5>رقم الهاتف</h5>
+                    <h5>دعم تقني متخصص</h5>
                     <a href="tel:+966112345678">+966 11 234 5678</a>
-                    <span className="contact-note">للاستفسارات والدعم</span>
+                    <span className="contact-note">دعم فني للتكامل وحل المشاكل التقنية</span>
                   </div>
                 </div>
                 
@@ -103,9 +106,9 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
                   </div>
                   <div className="contact-details">
-                    <h5>العنوان</h5>
+                    <h5>مقر التطوير التقني</h5>
                     <span>الرياض، المملكة العربية السعودية</span>
-                    <span className="contact-note">لتسليم الفواتير شخصياً</span>
+                    <span className="contact-note">مركز تطوير وصيانة منصة OCR</span>
                   </div>
                 </div>
               </div>
@@ -114,12 +117,12 @@ const ContactSection = () => {
           
           <Col lg={6} data-aos="fade-left">
             <div className="contact-form">
-              <h4 className="form-title">احصل على عرض سعر مجاني</h4>
-              <p className="form-subtitle">أخبرنا عن احتياجاتك وسنقدم لك عرض سعر مخصص</p>
+              <h4 className="form-title">طلب استشارة تقنية مجانية</h4>
+              <p className="form-subtitle">أخبرنا عن متطلباتك لتقنية OCR وسنقدم لك استشارة تقنية مخصصة</p>
               
               {showAlert && (
                 <Alert variant="success" className="mb-4">
-                  تم إرسال طلبك بنجاح! سنتواصل معك قريباً.
+                  تم إرسال طلب الاستشارة التقنية بنجاح! خبراؤنا في OCR سيتواصلون معك قريباً.
                 </Alert>
               )}
               
@@ -220,8 +223,8 @@ const ContactSection = () => {
                 </Form.Group>
                 
                 <Button type="submit" variant="primary" size="lg" className="w-100">
-                  <FontAwesomeIcon icon={faCalculator} className="me-2" />
-                  احصل على عرض السعر
+                  <FontAwesomeIcon icon={faFileInvoice} className="me-2" />
+                  طلب استشارة تقنية مجانية
                 </Button>
               </Form>
             </div>
