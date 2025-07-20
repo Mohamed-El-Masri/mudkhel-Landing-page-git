@@ -1,0 +1,448 @@
+/* =================================
+   About Section Styles
+   ================================= */
+
+.about-section {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(30, 58, 138, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(6, 182, 212, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* About Content */
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-content h3 {
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  position: relative;
+  line-height: 1.3;
+  padding-top: 3rem;
+}
+
+.about-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%);
+  border-radius: 2px;
+}
+
+.about-content p {
+  color: #64748b;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.about-content p strong {
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+/* About Visual */
+.about-visual {
+  position: relative;
+  z-index: 1;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(30, 58, 138, 0.1);
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #1e3a8a;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(30, 58, 138, 0.15);
+  border-color: rgba(30, 58, 138, 0.2);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+  transform: scale(1.1);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+/* Company Introduction */
+.company-intro {
+  background: linear-gradient(135deg, 
+    rgba(30, 58, 138, 0.05) 0%, 
+    rgba(6, 182, 212, 0.02) 100%
+  );
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+}
+
+.company-intro h4 {
+  color: #1e3a8a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.company-intro p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Achievement List */
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid #1e3a8a;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: #f1f5f9;
+  transform: translateX(-5px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
+}
+
+.achievement-icon {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  margin-left: 0.75rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.achievement-text {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991.98px) {
+  .about-content {
+    margin-bottom: 3rem;
+  }
+  
+  .about-content h3 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  .about-content h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .stats-grid {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    padding: 1.25rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+  }
+  
+  .company-intro {
+    padding: 1.5rem;
+  }
+  
+  .achievement-item {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .about-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .about-content p {
+    font-size: 0.95rem;
+  }
+  
+  .company-intro {
+    padding: 1.25rem;
+  }
+  
+  .company-intro h4 {
+    font-size: 1.1rem;
+  }
+  
+  .achievement-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .achievement-icon {
+    margin: 0;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .about-section {
+    background: #1e293b;
+  }
+  
+  .about-content h3 {
+    color: #06b6d4;
+  }
+  
+  .about-content p {
+    color: #cbd5e1;
+  }
+  
+  .about-content p strong {
+    color: #06b6d4;
+  }
+  
+  .stat-card {
+    background: #334155;
+    border-color: rgba(6, 182, 212, 0.2);
+  }
+  
+  .stat-number {
+    color: #06b6d4;
+  }
+  
+  .stat-label {
+    color: #94a3b8;
+  }
+  
+  .company-intro {
+    background: rgba(6, 182, 212, 0.1);
+    border-color: rgba(6, 182, 212, 0.3);
+  }
+  
+  .company-intro h4 {
+    color: #06b6d4;
+  }
+  
+  .company-intro p {
+    color: #cbd5e1;
+  }
+  
+  .achievement-item {
+    background: #475569;
+    border-left-color: #06b6d4;
+  }
+  
+  .achievement-item:hover {
+    background: #64748b;
+  }
+  
+  .achievement-icon {
+    color: #06b6d4;
+  }
+  
+  .achievement-text {
+    color: #e2e8f0;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .stat-number,
+  .achievement-item {
+    transition: none !important;
+  }
+  
+  .stat-card:hover,
+  .stat-card:hover .stat-number,
+  .achievement-item:hover {
+    transform: none !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .about-section {
+    background: #ffffff;
+  }
+  
+  .about-content h3,
+  .about-content p strong,
+  .company-intro h4,
+  .stat-number,
+  .achievement-icon {
+    color: #000000 !important;
+  }
+  
+  .about-content p,
+  .stat-label,
+  .company-intro p,
+  .achievement-text {
+    color: #000000 !important;
+  }
+  
+  .stat-card,
+  .company-intro,
+  .achievement-item {
+    background: #ffffff;
+    border: 2px solid #000000;
+  }
+  
+  .achievement-item {
+    border-left: 4px solid #000000;
+  }
+}
+
+/* Focus indicators for accessibility */
+.stat-card:focus-within,
+.achievement-item:focus-within {
+  outline: 3px solid #1e3a8a;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .about-section {
+    background: #ffffff !important;
+  }
+  
+  .about-section::before {
+    display: none !important;
+  }
+  
+  .stat-card,
+  .company-intro,
+  .achievement-item {
+    background: #ffffff !important;
+    border: 1px solid #000000;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  
+  .about-content h3,
+  .about-content p,
+  .stat-number,
+  .stat-label,
+  .company-intro h4,
+  .company-intro p,
+  .achievement-text {
+    color: #000000 !important;
+  }
+  
+  .stat-card::before {
+    display: none !important;
+  }
+}
