@@ -8,7 +8,6 @@ import '../../styles/sections/ContactSection.css';
 import { 
   faPhone,
   faEnvelope,
-  faMapMarkerAlt,
   faCalculator
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -47,46 +46,44 @@ const ContactSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
-            <span className="title-icon">📞</span>
-            اطلب الخدمة الآن
+            <span className="title-icon">�</span>
+            ابدأ تجربتك المجانية أو احصل على استشارة متخصصة
           </h2>
           <p className="section-subtitle">
-            جاهز لتحويل فواتيرك إلى ملفات Excel منظمة؟ تواصل معنا للحصول على عرض سعر مجاني!
+            جرب تحويل 3 فواتير مجاناً واكتشف بنفسك لماذا تثق بنا أكثر من 500 شركة. فريق خبراء OCR والمحاسبة جاهز لمساعدتك!
           </p>
         </div>
 
         <Row>
           <Col lg={6} data-aos="fade-right">
             <div className="contact-info">
-              <h3>🚀 ابدأ خدمة مُدخِل اليوم!</h3>
+              <h3>🎯 ابدأ رحلتك مع التحويل الذكي للفواتير</h3>
               <p className="contact-intro">
-                أرسل لنا فواتيرك واحصل على ملف Excel منظم خلال 24 ساعة. 
-                فريقنا جاهز لخدمتك بأعلى معايير الجودة والدقة.
+                <strong>تجربة مجانية فورية:</strong> ارفع 3 فواتير مجاناً واختبر دقة وسرعة التحويل بنفسك. 
+                أو تواصل مع خبرائنا للحصول على استشارة مخصصة حول احتياجات شركتك وأفضل حل مناسب لك.
+                <br /><em>✨ خبراء OCR ومحاسبين معتمدين في خدمتك 24/7</em>
               </p>
-              
               <div className="contact-items">
                 <div className="contact-item">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </div>
                   <div className="contact-details">
-                    <h5>واتساب (الأسرع)</h5>
+                    <h5>💬 واتساب (استجابة فورية)</h5>
                     <a href="https://wa.me/+966500000000">+966 50 000 0000</a>
-                    <span className="contact-note">أرسل صور الفواتير مباشرة</span>
+                    <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
                   </div>
                 </div>
-                
                 <div className="contact-item">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
                   <div className="contact-details">
-                    <h5>البريد الإلكتروني</h5>
+                    <h5>📧 دعم تقني متخصص</h5>
                     <a href="mailto:service@mudakhil.com">service@mudakhil.com</a>
-                    <span className="contact-note">لإرسال الفواتير والمرفقات</span>
+                    <span className="contact-note">خبراء OCR ومحاسبين معتمدين</span>
                   </div>
                 </div>
-                
                 <div className="contact-item">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faPhone} />
@@ -94,28 +91,16 @@ const ContactSection = () => {
                   <div className="contact-details">
                     <h5>رقم الهاتف</h5>
                     <a href="tel:+966112345678">+966 11 234 5678</a>
-                    <span className="contact-note">للاستفسارات والدعم</span>
-                  </div>
-                </div>
-                
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                  </div>
-                  <div className="contact-details">
-                    <h5>العنوان</h5>
-                    <span>الرياض، المملكة العربية السعودية</span>
-                    <span className="contact-note">لتسليم الفواتير شخصياً</span>
+                    <span className="contact-note">دعم فني مباشر</span>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
-          
           <Col lg={6} data-aos="fade-left">
             <div className="contact-form">
-              <h4 className="form-title">احصل على عرض سعر مجاني</h4>
-              <p className="form-subtitle">أخبرنا عن احتياجاتك وسنقدم لك عرض سعر مخصص</p>
+              <h4 className="form-title">اطلب تجربة مجانية أو استشارة</h4>
+              <p className="form-subtitle">أخبرنا عن احتياجك أو ارفع فاتورة لتجربة التحويل الذكي مجاناً</p>
               
               {showAlert && (
                 <Alert variant="success" className="mb-4">

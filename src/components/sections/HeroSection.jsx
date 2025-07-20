@@ -33,13 +33,14 @@ const HeroSection = () => {
               data-aos="fade-right"
             >
               <h1 className="hero-title">
-                <span className="title-highlight">مُدخِل</span>
+                <span className="title-highlight">حوّل أي فاتورة إلى Excel</span>
                 <br />
-                خدمة مسح الفواتير الاحترافية
+                في 30 ثانية بدقة 99.9% 
               </h1>
               <p className="hero-subtitle">
-                وداعاً للفواتير اليدوية، ومرحباً بمستقبل الذكاء في الإدخال. 
-                نقدم خدمة مسح وإدخال الفواتير احترافياً لتوفير وقتك وجهدك.
+                <strong>لا مزيد من الإدخال اليدوي!</strong> ارفع صورة أو PDF لأي فاتورة (مبيعات، مشتريات، إيصالات) 
+                ودع الذكاء الاصطناعي المتقدم يحوّلها إلى ملف Excel منسق بالكامل مع تصنيف البيانات تلقائياً.
+                <br /><em>✨ يدعم الفواتير العربية والإنجليزية • لا يحفظ بياناتك • نتائج فورية</em>
               </p>
               
               <div className="hero-features">
@@ -49,7 +50,7 @@ const HeroSection = () => {
                   data-aos-delay="100"
                 >
                   <FontAwesomeIcon icon={faCheckCircle} />
-                  <span>فريق متخصص في المحاسبة</span>
+                  <span><strong>OCR متقدم:</strong> يقرأ أصعب الخطوط والفواتير المعقدة</span>
                 </div>
                 <div 
                   className="feature-item"
@@ -57,7 +58,7 @@ const HeroSection = () => {
                   data-aos-delay="200"
                 >
                   <FontAwesomeIcon icon={faCheckCircle} />
-                  <span>دقة عالية في الإدخال</span>
+                  <span><strong>ذكاء اصطناعي:</strong> يفهم السياق ويصنف البيانات تلقائياً</span>
                 </div>
                 <div 
                   className="feature-item"
@@ -65,10 +66,9 @@ const HeroSection = () => {
                   data-aos-delay="300"
                 >
                   <FontAwesomeIcon icon={faCheckCircle} />
-                  <span>تسليم سريع وموثوق</span>
+                  <span><strong>أمان مطلق:</strong> تشفير كامل + حذف تلقائي فوري</span>
                 </div>
               </div>
-              
               <div 
                 className="hero-actions"
                 data-aos="fade-up"
@@ -81,7 +81,7 @@ const HeroSection = () => {
                   className="me-3"
                 >
                   <FontAwesomeIcon icon={faRocket} className="me-2" />
-                  تواصل معنا الآن
+                  جرّب الخدمة الآن
                 </Button>
                 <Button 
                   variant="outline-primary" 
@@ -89,7 +89,7 @@ const HeroSection = () => {
                   onClick={() => scrollToSection('solution')}
                 >
                   <FontAwesomeIcon icon={faEye} className="me-2" />
-                  اعرف المزيد
+                  كيف تعمل؟
                 </Button>
               </div>
             </div>
@@ -102,7 +102,7 @@ const HeroSection = () => {
             >
               <div className="hero-dashboard">
                 <div className="dashboard-header">
-                  <div className="dashboard-title">خدمة مُدخِل الاحترافية</div>
+                  <div className="dashboard-title">🤖 منصة مُدخِل الذكية - تحويل فوري</div>
                 </div>
                 <div className="dashboard-content">
                   <div className="service-steps">
@@ -112,7 +112,7 @@ const HeroSection = () => {
                       data-aos-delay="200"
                     >
                       <FontAwesomeIcon icon={faFileInvoice} />
-                      <span>أرسل لنا فواتيرك</span>
+                      <span><strong>1. ارفع الفاتورة</strong><br />PDF، JPG، PNG</span>
                     </div>
                     
                     <div 
@@ -129,7 +129,7 @@ const HeroSection = () => {
                       data-aos-delay="400"
                     >
                       <FontAwesomeIcon icon={faCogs} />
-                      <span>نقوم بالمعالجة</span>
+                      <span><strong>2. مسح ذكي</strong><br />OCR + AI معالجة</span>
                     </div>
                     
                     <div 
@@ -146,7 +146,7 @@ const HeroSection = () => {
                       data-aos-delay="600"
                     >
                       <FontAwesomeIcon icon={faFileExcel} />
-                      <span>تستلم ملف Excel جاهز</span>
+                      <span><strong>3. تحميل Excel</strong><br />منسق ومصنف تلقائياً</span>
                     </div>
                   </div>
                 </div>
