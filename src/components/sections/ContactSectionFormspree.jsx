@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-const ContactSection = () => {
+const ContactSectionFormspree = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,8 +37,7 @@ const ContactSection = () => {
     setIsLoading(true);
 
     // استخدام Formspree - أسهل من EmailJS
-    // غيّر هذا الرابط بالرابط الذي ستحصل عليه من Formspree
-    const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID';
+    const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID'; // غيّر هذا بالـ ID الفعلي من Formspree
 
     try {
       const response = await fetch(formspreeEndpoint, {
@@ -51,7 +50,7 @@ const ContactSection = () => {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          _replyto: formData.email,
+          _replyto: formData.email, // للرد على إيميل المرسل
           _subject: `طلب جديد من ${formData.name} - موقع مُدخِل`,
         }),
       });
@@ -88,7 +87,7 @@ const ContactSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
-            <span className="title-icon">📞</span>
+            <span className="title-icon">🚀</span>
             ابدأ بـ 50 فاتورة مجانية أو احصل على استشارة متخصصة
           </h2>
           <p className="section-subtitle">
@@ -96,43 +95,47 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <Row>
-          <Col lg={6} data-aos="fade-right">
+        <Row className="justify-content-center">
+          <Col lg={5} className="mb-5 mb-lg-0" data-aos="fade-right">
             <div className="contact-info">
-              <h3>ابدأ رحلتك مع التحويل الذكي للفواتير</h3>
+              <h3>تواصل معنا مباشرة</h3>
               <p className="contact-intro">
-                <strong>تجربة 50 فاتورة مجانية:</strong> ارفع 50 فاتورة مجاناً واختبر دقة وسرعة التحويل بنفسك. 
-                أو تواصل مع خبرائنا للحصول على استشارة مخصصة حول احتياجات شركتك وأفضل حل مناسب لك.
+                فريقنا جاهز لمساعدتك في أي وقت. اختر الطريقة الأنسب للتواصل معنا.
               </p>
+              
               <div className="contact-items">
                 <div className="contact-item">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </div>
                   <div className="contact-details">
-                    <h5>واتساب (استجابة فورية)</h5>
-                    <a href="https://wa.me/+966500000000">+966 50 000 0000</a>
-                    <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
+                    <h5>واتساب</h5>
+                    <a href="https://wa.me/966XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                      +966 XX XXX XXXX
+                    </a>
+                    <div className="contact-note">رد سريع خلال دقائق</div>
                   </div>
                 </div>
-                <div className="contact-item">
-                  <div className="contact-icon">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                  </div>
-                  <div className="contact-details">
-                    <h5>دعم تقني متخصص</h5>
-                    <a href="mailto:service@mudakhil.com">service@mudakhil.com</a>
-                    <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
-                  </div>
-                </div>
+                
                 <div className="contact-item">
                   <div className="contact-icon">
                     <FontAwesomeIcon icon={faPhone} />
                   </div>
                   <div className="contact-details">
-                    <h5>رقم الهاتف</h5>
-                    <a href="tel:+966112345678">+966 11 234 5678</a>
-                    <span className="contact-note">دعم فني مباشر</span>
+                    <h5>اتصال مباشر</h5>
+                    <a href="tel:+966XXXXXXXXX">+966 XX XXX XXXX</a>
+                    <div className="contact-note">من 9 ص إلى 6 م</div>
+                  </div>
+                </div>
+                
+                <div className="contact-item">
+                  <div className="contact-icon">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </div>
+                  <div className="contact-details">
+                    <h5>البريد الإلكتروني</h5>
+                    <a href="mailto:ammarlologeass@gmail.com">ammarlologeass@gmail.com</a>
+                    <div className="contact-note">رد خلال 24 ساعة</div>
                   </div>
                 </div>
               </div>
@@ -160,6 +163,7 @@ const ContactSection = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
+                        placeholder="أدخل اسمك الكامل"
                       />
                     </Form.Group>
                   </Col>
@@ -172,6 +176,7 @@ const ContactSection = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
+                        placeholder="05xxxxxxxx"
                       />
                     </Form.Group>
                   </Col>
@@ -185,6 +190,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
+                    placeholder="example@domain.com"
                   />
                 </Form.Group>
                 
@@ -196,7 +202,7 @@ const ContactSection = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="اكتب رسالتك هنا..."
+                    placeholder="اكتب رسالتك هنا... (اختياري)"
                   />
                 </Form.Group>
                 
@@ -218,4 +224,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactSectionFormspree;

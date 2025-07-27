@@ -259,7 +259,7 @@
     color: var(--features-accent-text);
     padding: 0.75rem 1rem;
     position: relative;
-    padding-right: 2.5rem;
+    padding-right: 3rem;
     font-size: 1rem;
     line-height: 1.6;
     transition: all 0.3s ease;

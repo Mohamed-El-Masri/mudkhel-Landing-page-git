@@ -5,13 +5,26 @@ import Logo from '../assets/Logo.png';
 // LoadingScreen specific styles
 import '../styles/components/LoadingScreen.css';
 
+import { 
+  faFileInvoice,
+  faTable,
+  faShield,
+  faCloud,
+  faMagic,
+  faRocket,
+  faStar,
+  faLightbulb
+} from '@fortawesome/free-solid-svg-icons';
+
 const LoadingScreen = () => {
   const [currentStep, setCurrentStep] = useState(0);
   
   const steps = [
-    "🔄 تهيئة النظام...",
-    "📊 تحميل البيانات...", 
-    "✨ تجهيز الواجهة..."
+    { icon: faRocket, text: "تهيئة منصة مُدخِل..." },
+    { icon: faFileInvoice, text: "تحضير أدوات مسح الفواتير..." }, 
+    { icon: faTable, text: "تحميل نماذج Excel الاحترافية..." },
+    { icon: faShield, text: "تفعيل أمان البيانات..." },
+    { icon: faStar, text: "جاهز للاستخدام!" }
   ];
 
   useEffect(() => {
@@ -53,7 +66,8 @@ const LoadingScreen = () => {
             key={index}
             className={`loading-step ${index === currentStep ? 'active' : ''}`}
           >
-            {step}
+            <FontAwesomeIcon icon={step.icon} className="step-icon" />
+            <span>{step.text}</span>
           </div>
         ))}
       </div>
