@@ -27,12 +27,11 @@ const AboutSection = () => {
                 منصتنا تفهم السياق، تتعرف على الخطوط الصعبة، وتستخلص البيانات بدقة مذهلة حتى من الفواتير المعقدة أو منخفضة الجودة.
               </p>
               <p>
-                <strong>🎯 التفوق التقني:</strong> نقدم معدل دقة 99.9% في استخراج البيانات مع قدرة على معالجة 
-                أكثر من 50 نوع فاتورة مختلف. تقنيتنا تتطور ذاتياً وتتحسن مع كل استخدام.
+                <strong>🎯 التفوق التقني:</strong> نقدم معدل دقة 98% في استخراج البيانات مع قدرة على معالجة 
+                أنواع مختلفة من الفواتير.
               </p>
               <p>
-                <strong>💼 للشركات الذكية:</strong> أكثر من 500 شركة تثق بنا لتوفير ساعات من الوقت يومياً. 
-                لا حاجة لموظفين إدخال بيانات، لا أخطاء بشرية، ولا تأخير في المعالجة.
+                <strong>💼 توافق ضريبي:</strong> توافق ضريبي مع معايير الفاتورة الموحدة والضريبة المضافة.
               </p>
             </div>
           </Col>
@@ -41,7 +40,7 @@ const AboutSection = () => {
             <div className="about-visual">
               <div className="stats-grid">
                 <div className="stat-card" data-aos="zoom-in" data-aos-delay="100">
-                  <div className="stat-number">99.9%</div>
+                  <div className="stat-number">98%</div>
                   <div className="stat-label">دقة استخراج البيانات</div>
                 </div>
                 <div className="stat-card" data-aos="zoom-in" data-aos-delay="200">
@@ -49,11 +48,11 @@ const AboutSection = () => {
                   <div className="stat-label">متوسط زمن التحويل</div>
                 </div>
                 <div className="stat-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div className="stat-number">+50,000</div>
+                  <div className="stat-number">+10,000</div>
                   <div className="stat-label">فاتورة تم تحويلها</div>
                 </div>
                 <div className="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div className="stat-number">500+</div>
+                  <div className="stat-number">+50</div>
                   <div className="stat-label">شركة تثق بنا</div>
                 </div>
               </div>

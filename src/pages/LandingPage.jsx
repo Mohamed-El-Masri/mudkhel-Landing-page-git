@@ -4,9 +4,9 @@ import 'aos/dist/aos.css';
 
 // Import sections
 import HeroSection from '../components/sections/HeroSection';
-import AboutSection from '../components/sections/AboutSection';
+import ProblemSection from '../components/sections/ProblemSection';
+// import AboutSection from '../components/sections/AboutSection';
 import FeaturesSection from '../components/sections/FeaturesSection';
-import SolutionSection from '../components/sections/SolutionSection';
 import PricingSection from '../components/sections/PricingSection';
 import FAQSection from '../components/sections/FAQSection';
 import ContactSection from '../components/sections/ContactSection';
@@ -25,9 +25,9 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <HeroSection />
-      <AboutSection />
+      <ProblemSection />
+      {/* <AboutSection /> */}
       <FeaturesSection />
-      <SolutionSection />
       <PricingSection />
       <FAQSection />
       <ContactSection />

@@ -10,13 +10,17 @@
    CSS Variables - نظام متغيرات محسن
    ================================= */
 :root {
-  /* الألوان الأساسية المحسنة */
-  --primary-color: #1e3a8a;
-  --primary-light: #3b82f6;
-  --primary-dark: #1e40af;
+  /* الألوان الأساسية الجديدة */
+  --primary-color: #0e2954;
+  --primary-light: #1a3966;
+  --primary-dark: #0a1f3d;
   --primary-ultra-light: #dbeafe;
-  --secondary-color: #6366f1;
-  --accent-color: #06b6d4;
+  --secondary-color: #90bdba;
+  --secondary-light: #a8d1ce;
+  --secondary-dark: #7aa5a2;
+  --accent-color: #f4f2de;
+  --accent-light: #f8f6e9;
+  --accent-dark: #f0edcf;
   
   /* ألوان النجاح والتحذير والخطر */
   --success-color: #10b981;
@@ -395,15 +399,16 @@ button:focus {
   }
 }
 
-/* دعم الوضع الداكن */
+/* دعم الوضع الداكن المحسن */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
-    --bg-primary: #1e293b;
-    --bg-secondary: #334155;
-    --bg-tertiary: #475569;
+    --text-primary: #f8f6e9;
+    --text-secondary: #a8d1ce;
+    --text-muted: #90bdba;
+    --bg-primary: #0a1f3d;
+    --bg-secondary: #0e2954;
+    --bg-tertiary: #1a3966;
+    --logo-filter: brightness(1.3) contrast(1.1) drop-shadow(0 0 15px rgba(244, 242, 222, 0.5));
   }
 }
 

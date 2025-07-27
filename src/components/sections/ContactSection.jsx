@@ -7,19 +7,15 @@ import '../../styles/sections/ContactSection.css';
 
 import { 
   faPhone,
-  faEnvelope,
-  faCalculator
+  faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    company: '',
     email: '',
     phone: '',
-    invoices: '1-50',
-    service: 'basic',
     message: ''
   });
 
@@ -46,22 +42,21 @@ const ContactSection = () => {
       <Container>
         <div className="section-header text-center" data-aos="fade-up">
           <h2 className="section-title">
-            <span className="title-icon">�</span>
-            ابدأ تجربتك المجانية أو احصل على استشارة متخصصة
+            <span className="title-icon">🚀</span>
+            ابدأ بـ 50 فاتورة مجانية أو احصل على استشارة متخصصة
           </h2>
           <p className="section-subtitle">
-            جرب تحويل 3 فواتير مجاناً واكتشف بنفسك لماذا تثق بنا أكثر من 500 شركة. فريق خبراء OCR والمحاسبة جاهز لمساعدتك!
+            جرب تحويل 50 فاتورة مجاناً واكتشف بنفسك لماذا تثق بنا أكثر من 50 شركة.
           </p>
         </div>
 
         <Row>
           <Col lg={6} data-aos="fade-right">
             <div className="contact-info">
-              <h3>🎯 ابدأ رحلتك مع التحويل الذكي للفواتير</h3>
+              <h3>ابدأ رحلتك مع التحويل الذكي للفواتير</h3>
               <p className="contact-intro">
-                <strong>تجربة مجانية فورية:</strong> ارفع 3 فواتير مجاناً واختبر دقة وسرعة التحويل بنفسك. 
+                <strong>تجربة 50 فاتورة مجانية:</strong> ارفع 50 فاتورة مجاناً واختبر دقة وسرعة التحويل بنفسك. 
                 أو تواصل مع خبرائنا للحصول على استشارة مخصصة حول احتياجات شركتك وأفضل حل مناسب لك.
-                <br /><em>✨ خبراء OCR ومحاسبين معتمدين في خدمتك 24/7</em>
               </p>
               <div className="contact-items">
                 <div className="contact-item">
@@ -69,7 +64,7 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </div>
                   <div className="contact-details">
-                    <h5>💬 واتساب (استجابة فورية)</h5>
+                    <h5>واتساب (استجابة فورية)</h5>
                     <a href="https://wa.me/+966500000000">+966 50 000 0000</a>
                     <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
                   </div>
@@ -79,9 +74,9 @@ const ContactSection = () => {
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
                   <div className="contact-details">
-                    <h5>📧 دعم تقني متخصص</h5>
+                    <h5>دعم تقني متخصص</h5>
                     <a href="mailto:service@mudakhil.com">service@mudakhil.com</a>
-                    <span className="contact-note">خبراء OCR ومحاسبين معتمدين</span>
+                    <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -124,33 +119,6 @@ const ContactSection = () => {
                   </Col>
                   <Col md={6}>
                     <Form.Group className="mb-3">
-                      <Form.Label>الشركة *</Form.Label>
-                      <Form.Control
-                        type="text"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                </Row>
-                
-                <Row>
-                  <Col md={6}>
-                    <Form.Group className="mb-3">
-                      <Form.Label>البريد الإلكتروني *</Form.Label>
-                      <Form.Control
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </Form.Group>
-                  </Col>
-                  <Col md={6}>
-                    <Form.Group className="mb-3">
                       <Form.Label>رقم الهاتف *</Form.Label>
                       <Form.Control
                         type="tel"
@@ -164,49 +132,30 @@ const ContactSection = () => {
                 </Row>
                 
                 <Form.Group className="mb-3">
-                  <Form.Label>عدد الفواتير الشهرية (تقريباً)</Form.Label>
-                  <Form.Select
-                    name="invoices"
-                    value={formData.invoices}
+                  <Form.Label>البريد الإلكتروني *</Form.Label>
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
-                  >
-                    <option value="1-50">1 - 50 فاتورة</option>
-                    <option value="51-100">51 - 100 فاتورة</option>
-                    <option value="101-300">101 - 300 فاتورة</option>
-                    <option value="301-500">301 - 500 فاتورة</option>
-                    <option value="500+">أكثر من 500 فاتورة</option>
-                  </Form.Select>
-                </Form.Group>
-                
-                <Form.Group className="mb-3">
-                  <Form.Label>نوع الخدمة المطلوبة</Form.Label>
-                  <Form.Select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleInputChange}
-                  >
-                    <option value="basic">إدخال أساسي</option>
-                    <option value="fast">خدمة سريعة</option>
-                    <option value="advanced">خدمة متقدمة مع تصنيف</option>
-                    <option value="enterprise">حل مؤسسي مخصص</option>
-                  </Form.Select>
+                    required
+                  />
                 </Form.Group>
                 
                 <Form.Group className="mb-4">
-                  <Form.Label>تفاصيل إضافية</Form.Label>
+                  <Form.Label>رسالتك</Form.Label>
                   <Form.Control
                     as="textarea"
                     rows={4}
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="أخبرنا عن احتياجاتك الخاصة، نوع الفواتير، التوقيت المطلوب، أو أي ملاحظات أخرى..."
+                    placeholder="اكتب رسالتك هنا..."
                   />
                 </Form.Group>
                 
                 <Button type="submit" variant="primary" size="lg" className="w-100">
-                  <FontAwesomeIcon icon={faCalculator} className="me-2" />
-                  احصل على عرض السعر
+                      إرسال
                 </Button>
               </Form>
             </div>

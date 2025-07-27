@@ -18,7 +18,7 @@ const Footer = () => {
                 {/* <span className="brand-text h4">مُدخِل</span> */}
               </div>
               <p className="brand-description text-muted">
-                خدمة مسح وإدخال الفواتير الاحترافية - نحول فواتيرك الورقية إلى ملفات Excel منظمة بدقة عالية وسرعة في التسليم
+                منصة ذكية تمكّنك من مسح، استخراج وتصنيف بيانات الفواتير والإيصالات تلقائيًا بدقة وبدعم كامل للغة العربية، وتخزينها سحابيا لتوفّر عليك الوقت وتسهّل تنظيم نفقاتك بذكاء وأمان.
               </p>
               <div className="social-links">
                 <a href="#" className="social-link me-3">
@@ -30,7 +30,7 @@ const Footer = () => {
                 <a href="#" className="social-link me-3">
                   <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a href="#" className="social-link">
+                <a href="https://www.instagram.com/mudkhil_scanner?igsh=MTZhaHZqeHRzbnJoOQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="social-link">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </div>

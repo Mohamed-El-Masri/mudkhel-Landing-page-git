@@ -72,16 +72,7 @@ const Header = () => {
             >
               الرئيسية
             </Nav.Link>
-            <Nav.Link 
-              href="#about"
-              className="nav-link"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('about');
-              }}
-            >
-              عن الشركة
-            </Nav.Link>
+          
             <Nav.Link 
               href="#features"
               className="nav-link"
@@ -93,14 +84,14 @@ const Header = () => {
               المميزات
             </Nav.Link>
             <Nav.Link 
-              href="#solution"
+              href="#problem"
               className="nav-link"
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('solution');
+                scrollToSection('problem');
               }}
             >
-              الحل
+              لماذا مُدخِل؟
             </Nav.Link>
             <Nav.Link 
               href="#pricing"
