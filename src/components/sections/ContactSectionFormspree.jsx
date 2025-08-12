@@ -37,7 +37,7 @@ const ContactSectionFormspree = () => {
     setIsLoading(true);
 
     // استخدام Formspree - أسهل من EmailJS
-    const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID'; // غيّر هذا بالـ ID الفعلي من Formspree
+    const formspreeEndpoint = 'https://formspree.io/f/mrbljkow'; // غيّر هذا بالـ ID الفعلي من Formspree
 
     try {
       const response = await fetch(formspreeEndpoint, {

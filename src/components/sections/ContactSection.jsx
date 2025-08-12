@@ -38,7 +38,7 @@ const ContactSection = () => {
 
     // استخدام Formspree - أسهل من EmailJS
     // غيّر هذا الرابط بالرابط الذي ستحصل عليه من Formspree
-    const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORM_ID';
+    const formspreeEndpoint = 'https://formspree.io/f/mrbljkow';
 
     try {
       const response = await fetch(formspreeEndpoint, {
@@ -111,7 +111,7 @@ const ContactSection = () => {
                   </div>
                   <div className="contact-details">
                     <h5>واتساب (استجابة فورية)</h5>
-                    <a href="https://wa.me/+966500000000">+966 50 000 0000</a>
+                    <a dir="ltr"  href="https://wa.me/+9660597660197">+966 05 976 60197</a>
                     <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const ContactSection = () => {
                   </div>
                   <div className="contact-details">
                     <h5>دعم تقني متخصص</h5>
-                    <a href="mailto:service@mudakhil.com">service@mudakhil.com</a>
+                    <a href="mailto:mudkhil0@gmail.com">mudkhil0@gmail.com</a>
                     <span className="contact-note">تجربة مجانية فورية + استشارة متخصصة</span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
                   </div>
                   <div className="contact-details">
                     <h5>رقم الهاتف</h5>
-                    <a href="tel:+966112345678">+966 11 234 5678</a>
+                    <a dir="ltr" href="tel:+9660597660197">+966 05 976 60197</a>
                     <span className="contact-note">دعم فني مباشر</span>
                   </div>
                 </div>
